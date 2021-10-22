@@ -9,8 +9,12 @@ const createCardNode = ()=>{
     const el = document.createElement("div")
     el.className= "elipse"
     const prim = document.createTextNode('1')
+    const pa = document.createElement("p")
+    const par = document.createTextNode('Agenda/topic')
+    pa.appendChild(par)
     el.appendChild(prim)
     card_l.appendChild(el)
+    card_l.appendChild(pa)
     card_h.appendChild(card_l)
     card.appendChild(card_h)
 }
